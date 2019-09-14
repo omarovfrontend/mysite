@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Формы</title>
+        <link href="css/form.css" type="text/css" rel="stylesheet" />
+    </head>
+    <body>
+        <div id="form">
+            <h1>Форма</h1>
+            <form action="#" method="post">
+                <div class="row">
+                    <p><label for="login">Логин</label></p>
+                    <input type="text" name="login" maxlength="10" id="login" />
+                </div> 
+                <div class="row">
+                    <p><label for="password">Пароль</label></p>
+                    <input type="password" name="password" id="password" />
+                </div>
+                <div class="row">
+                    <p>Оцените наш сайт</p>
+                    <label><input type="radio" name="evaluation" value="excellent" checked="checked" /> Отлично</label><br />
+                    <label><input type="radio" name="evaluation" value="good" /> Хорошо</label><br />
+                    <label><input type="radio" name="evaluation" value="badly" /> Плохо</label><br />
+                </div>
+                <div class="row">
+                    <p>Как вы проводите свободное время?</p>
+                    <label><input type="checkbox" name="leisure[]" value="read" checked="checked" /> Читаю книгу</label><br />
+                    <label><input type="checkbox" name="leisure[]" value="watch" /> Смотрю ТВ</label><br />
+                    <label><input type="checkbox" name="leisure[]" value="listen" /> Слушаю музыку</label><br />
+                    <label><input type="checkbox" name="leisure[]" value="walk" /> Гуляю с друзьями</label><br />
+                </div>
+                <div class="row">
+                    <p><label for="musicstyles">Какие стили музыки вы слушаете?</label></p>
+                    <select name="musicstyles[]" multiple="multiple" size="5" id="musicstyles">
+                        <option value="1">Поп</option>
+                        <option value="2">Рэп</option>
+                        <option value="3">Рок</option>
+                        <option value="4">Джаз</option>
+                        <option value="5">Блюз</option>
+                    </select>
+                </div>
+                <div class="row">
+                    <p>Ваши интересы</p>
+                    <textarea name="interests" rows="4" cols="45" id="interests">Какой-то текст...</textarea><br />
+                </div>
+                <input type="image" name="send" src="images/send_btn.png" />
+            </form>
+        </div>
+    </body>
+</html>
